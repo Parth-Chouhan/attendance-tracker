@@ -1,42 +1,3 @@
-````markdown
-# Attendance Tracker
-
-A simple web-based attendance management system built using **Python, Flask, and MySQL**. The application allows users to register participants, view participant records, update attendance status, and monitor attendance statistics through a clean web interface.
-
-## Features
-
-- Add new participants
-- Assign a unique Participant ID
-- Prevent duplicate Participant IDs
-- View all registered participants
-- Mark participants as Present or Absent
-- Update attendance status at any time
-- Display total number of participants
-- Display total Present and Absent participants
-- Display attendance status using visual badges
-- Display success and error messages
-- Store participant and attendance data in MySQL
-- Keep database credentials outside the source code using environment variables
-- Simple and responsive user interface
-
----
-
-## Technologies Used
-
-| Technology | Purpose |
-|---|---|
-| Python | Backend programming |
-| Flask | Web framework |
-| MySQL | Database |
-| HTML | Webpage structure |
-| CSS | User interface styling |
-| Jinja2 | Dynamic HTML templates |
-| mysql-connector-python | Python-MySQL connection |
-| python-dotenv | Environment variable management |
-| Git & GitHub | Version control and project hosting |
-
----
-
 ## Project Structure
 
 ```text
@@ -56,9 +17,7 @@ attendance_tracker/
 └── templates/
     ├── index.html          # Add participant page
     └── participants.html   # Participant list and attendance page
-````
-
----
+```
 
 ## Application Workflow
 
@@ -175,10 +134,8 @@ Replace the placeholder values with your local MySQL credentials.
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/attendance-tracker.git
+git clone https://github.com/Parth-Chouhan/attendance-tracker.git
 ```
-
-Replace `YOUR_USERNAME` with your GitHub username.
 
 Navigate into the project directory:
 
