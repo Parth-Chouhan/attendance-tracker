@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Attendance Tracker</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Attendance Tracker</h1>
+            <p>Manage participant attendance easily</p>
+        </div>
+
+
+        <!-- Flash Messages -->
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+
+            {% if messages %}
+
+                {% for category, message in messages %}
+
+                    <div class="alert {{ category }}">
+                        {{ message }}
+                    </div>
+
+                {% endfor %}
+
+            {% endif %}
+
+        {% endwith %}
+
+
+        <!-- Add Participant Form -->
+
+        <div class="card">
+
+            <h2>Add Participant</h2>
+
+            <form action="/add" method="POST">
+
+                <label for="name">
+                    Participant Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter participant name"
+                    required
+                >
+
+
+                <label for="participant_id">
+                    Participant ID
+                </label>
+
+                <input
+                    type="text"
+                    id="participant_id"
+                    name="participant_id"
+                    placeholder="Enter participant ID"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="add-btn">
+                    Add Participant
+                </button>
+
+            </form>
+
+
+            <a href="/participants" class="link-btn">
+                View Participants
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
