@@ -322,11 +322,11 @@ This project demonstrates practical use of:
 
 ---
 
-# Author
+## Author
 
 **Parth Chouhan**
 
-Built as part of the **GFG task/project submission**.
-
-```
-```
+*GeeksforGeeks Recruitment Task — Attendance Tracker*
+<p align="center">
+  <img src="https://img.shields.io/badge/-2F8D46?style=for-the-badge&logoColor=white" width="100%" height="8">
+</p>
