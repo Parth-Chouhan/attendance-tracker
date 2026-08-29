@@ -110,4 +110,4 @@ def update_attendance(participant_id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
